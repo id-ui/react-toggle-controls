@@ -1,12 +1,22 @@
 {
   "name": "@kaprisa57/react-toggle-controls",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React Toggle Controls",
   "author": "kaprisa57@gmail.com",
   "license": "MIT",
   "repository": "kseniya57/react-toggle-controls",
   "main": "dist/index.js",
   "source": "src/index.js",
+  "keywords": [
+    "checkbox",
+    "radio",
+    "switch",
+    "toggle",
+    "form",
+    "control",
+    "react-component",
+    "react"
+  ],
   "engines": {
     "node": ">=10"
   },
