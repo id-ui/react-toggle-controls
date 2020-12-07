@@ -11,7 +11,7 @@ describe('Checkbox', () => {
     expect(results).toHaveNoViolations();
   });
 
-  it('calls onChange with true on click event if off',  () => {
+  it('calls onChange with true on click event if off', () => {
     const onChange = jest.fn();
     const { getByText } = render(
       <Checkbox label="label" onChange={onChange} />
@@ -23,7 +23,7 @@ describe('Checkbox', () => {
     expect(onChange).toHaveBeenCalledWith(true);
   });
 
-  it('calls onChange with false on click event if on',  () => {
+  it('calls onChange with false on click event if on', () => {
     const onChange = jest.fn();
     const { getByText } = render(
       <Checkbox label="label" checked onChange={onChange} />
@@ -35,7 +35,7 @@ describe('Checkbox', () => {
     expect(onChange).toHaveBeenCalledWith(false);
   });
 
-  it('does not call onChange on click event if disabled',  () => {
+  it('does not call onChange on click event if disabled', () => {
     const onChange = jest.fn();
     const { getByText } = render(
       <Checkbox label="label" disabled checked onChange={onChange} />
@@ -46,11 +46,9 @@ describe('Checkbox', () => {
   });
 
   it('Does not throw error if onChange not provided', () => {
-    const { getByText } = render(
-        <Checkbox label="label" />
-    );
+    const { getByText } = render(<Checkbox label="label" />);
     const label = getByText('label').parentElement;
     user.click(label);
-    expect(true).toEqual(true)
-  })
+    expect(true).toEqual(true);
+  });
 });
