@@ -15,7 +15,7 @@ yarn add @kaprisa57/react-toggle-controls
 ## Checkbox
 
 - [Props](https://kseniya57.github.io/react-toggle-controls/?path=/docs/checkbox--playground)
-- [Playground](https://kseniya57.github.io/react-toggle-controls/?path=/stories/checkbox--playground)
+- [Playground](https://kseniya57.github.io/react-toggle-controls/?path=/story/checkbox--playground)
 
 ```jsx
 import React, { useState } from 'react'
@@ -42,7 +42,7 @@ function CheckboxExample() {
 ## Radio
 
 - [Props](https://kseniya57.github.io/react-toggle-controls/?path=/docs/radio--playground)
-- [Playground](https://kseniya57.github.io/react-toggle-controls/?path=/stories/radio--playground)
+- [Playground](https://kseniya57.github.io/react-toggle-controls/?path=/story/radio--playground)
 
 ```jsx
 import React, { useState } from 'react'
@@ -69,7 +69,7 @@ function RadioExample() {
 ## Switch
 
 - [Props](https://kseniya57.github.io/react-toggle-controls/?path=/docs/switch--playground)
-- [Playground](https://kseniya57.github.io/react-toggle-controls/?path=/stories/switch--playground)
+- [Playground](https://kseniya57.github.io/react-toggle-controls/?path=/story/switch--playground)
 
 ```jsx
 import React, { useState } from 'react'
