@@ -14,7 +14,7 @@ export const Handle = styled.div`
   align-items: center;
   justify-content: center;
   transition: border-color 0.3s ease-in-out;
-  border-width: 0.2rem;
+  border-width: 2px;
   border-style: solid;
   cursor: ${ifProp('disabled', 'default', 'pointer')};
   width: ${prop('size')};
@@ -31,5 +31,5 @@ export const Container = styled.label`
 `;
 
 export const Label = styled.div`
-  margin-left: 1rem;
+  margin-left: 10px;
 `;

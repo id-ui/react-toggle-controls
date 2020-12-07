@@ -12,7 +12,7 @@ export const Handle = styled.div`
   min-height: ${prop('size')};
   border-width: 2px;
   border-style: solid;
-  border-radius: 0.5rem;
+  border-radius: 5px;
   transition: all 0.3s ease-in-out;
   user-select: none;
   border-color: ${prop('colors.border')};
@@ -26,5 +26,5 @@ export const Container = styled.label`
 `;
 
 export const Label = styled.span`
-  margin-left: 1rem;
+  margin-left: 10px;
 `;

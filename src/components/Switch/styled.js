@@ -23,7 +23,7 @@ export const Toggle = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   background-color: ${prop('color')};
   color: ${prop('iconColor')};
 
@@ -49,7 +49,7 @@ export const Handle = styled.div`
   width: ${prop('size.0')};
   min-width: ${prop('size.0')};
   height: ${prop('size.1')};
-  border-radius: 1rem;
+  border-radius: 10px;
   background-color: ${prop('color')};
 
   &:hover {
@@ -67,5 +67,5 @@ export const Container = styled.label`
 `;
 
 export const Label = styled.div`
-  margin-left: 1rem;
+  margin-left: 10px;
 `;
