@@ -18,9 +18,9 @@ function Checkbox({
   const currentColors = colors[disabled ? 'disabled' : checked ? 'on' : 'off'];
 
   return (
-    <Container className={className} size={size}>
+    <Container className={className} size={size} colors={currentColors}>
       <ToggleControl checked={checked} disabled={disabled} {...props} />
-      <Handle colors={currentColors} size={size} disabled={disabled}>
+      <Handle size={size} disabled={disabled}>
         {checked && icon}
       </Handle>
       {label && <Label>{label}</Label>}

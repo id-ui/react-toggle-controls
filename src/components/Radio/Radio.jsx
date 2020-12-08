@@ -16,15 +16,10 @@ function Radio({
   const currentColors = colors[disabled ? 'disabled' : checked ? 'on' : 'off'];
 
   return (
-    <Container size={handleSize}>
+    <Container colors={currentColors} size={handleSize}>
       <ToggleControl checked={checked} disabled={disabled} {...props} />
-      <Handle
-        className={className}
-        size={handleSize}
-        disabled={disabled}
-        colors={currentColors}
-      >
-        <Toggle size={toggleSize} colors={currentColors} />
+      <Handle className={className} size={handleSize} disabled={disabled}>
+        <Toggle size={toggleSize} />
       </Handle>
       {label && <Label>{label}</Label>}
     </Container>
