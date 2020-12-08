@@ -1,10 +1,10 @@
 {
-  "name": "@kaprisa57/react-toggle-controls",
-  "version": "1.0.4",
+  "name": "@idui/react-toggle-controls",
+  "version": "1.0.0",
   "description": "React Toggle Controls",
   "author": "kaprisa57@gmail.com",
   "license": "MIT",
-  "repository": "kseniya57/react-toggle-controls",
+  "repository": "id-ui/react-toggle-controls",
   "main": "dist/index.js",
   "source": "src/index.js",
   "keywords": [

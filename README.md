@@ -1,25 +1,25 @@
 # React Toggle Controls
 
-[![NPM](https://img.shields.io/npm/v/@kaprisa57/react-toggle-controls.svg)](https://www.npmjs.com/package/@kaprisa57/react-toggle-controls/) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![Coverage Status](https://coveralls.io/repos/github/kseniya57/react-toggle-controls/badge.svg?branch=main)](https://coveralls.io/github/kseniya57/react-toggle-controls?branch=main)
+[![NPM](https://img.shields.io/npm/v/@idui/react-toggle-controls.svg)](https://www.npmjs.com/package/@idui/react-toggle-controls/) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![Coverage Status](https://coveralls.io/repos/github/id-ui/react-toggle-controls/badge.svg?branch=main)](https://coveralls.io/github/id-ui/react-toggle-controls?branch=main)
 
 ## Install
 
 ```bash
-npm install --save @kaprisa57/react-toggle-controls
+npm install --save @idui/react-toggle-controls
 ```
 
 ```bash
-yarn add @kaprisa57/react-toggle-controls
+yarn add @idui/react-toggle-controls
 ```
 
 ## Checkbox
 
-- [Props](https://kseniya57.github.io/react-toggle-controls/?path=/docs/checkbox--playground)
-- [Playground](https://kseniya57.github.io/react-toggle-controls/?path=/story/checkbox--playground)
+- [Props](https://id-ui.github.io/react-toggle-controls/?path=/docs/checkbox--playground)
+- [Playground](https://id-ui.github.io/react-toggle-controls/?path=/story/checkbox--playground)
 
 ```jsx
 import React, { useState } from 'react'
-import { Checkbox } from '@kaprisa57/react-toggle-controls'
+import { Checkbox } from '@idui/react-toggle-controls'
 
 function CheckboxExample() {
   const [checked, setChecked] = useState(false);
@@ -41,12 +41,12 @@ function CheckboxExample() {
 
 ## Radio
 
-- [Props](https://kseniya57.github.io/react-toggle-controls/?path=/docs/radio--playground)
-- [Playground](https://kseniya57.github.io/react-toggle-controls/?path=/story/radio--playground)
+- [Props](https://id-ui.github.io/react-toggle-controls/?path=/docs/radio--playground)
+- [Playground](https://id-ui.github.io/react-toggle-controls/?path=/story/radio--playground)
 
 ```jsx
 import React, { useState } from 'react'
-import { Radio } from '@kaprisa57/react-toggle-controls'
+import { Radio } from '@idui/react-toggle-controls'
 
 function RadioExample() {
   const [checked, setChecked] = useState(false);
@@ -68,12 +68,12 @@ function RadioExample() {
 
 ## Switch
 
-- [Props](https://kseniya57.github.io/react-toggle-controls/?path=/docs/switch--playground)
-- [Playground](https://kseniya57.github.io/react-toggle-controls/?path=/story/switch--playground)
+- [Props](https://id-ui.github.io/react-toggle-controls/?path=/docs/switch--playground)
+- [Playground](https://id-ui.github.io/react-toggle-controls/?path=/story/switch--playground)
 
 ```jsx
 import React, { useState } from 'react'
-import { Switch } from '@kaprisa57/react-toggle-controls'
+import { Switch } from '@idui/react-toggle-controls'
 
 function SwitchExample() {
   const [checked, setChecked] = useState(false);
@@ -98,7 +98,7 @@ function SwitchExample() {
 
 ```jsx
 import React from 'react'
-import ToggleControl from '@kaprisa57/react-toggle-controls'
+import ToggleControl from '@idui/react-toggle-controls'
 
 function CustomToggle({ checked, disabled, label, onText, offText, className, ...props }) {
   return <label className={className} style={{ color: disabled ? 'gray' : 'black' }}>
@@ -125,4 +125,4 @@ CustomToggle.defaultProps = {
 
 ## License
 
-MIT © [kaprisa57@gmail.com](https://github.com/kaprisa57@gmail.com)
+MIT © [kaprisa57@gmail.com](https://github.com/id-ui)
