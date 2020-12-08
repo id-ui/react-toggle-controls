@@ -18,11 +18,20 @@ export const Handle = styled.div`
   border-color: ${prop('colors.border')};
   background-color: ${prop('colors.background')};
   color: ${prop('colors.icon')};
+  &:hover {
+    border-color: ${prop('colors.hover.border', prop('colors.border'))};
+    background-color: ${prop(
+      'colors.hover.background',
+      prop('colors.background')
+    )};
+    color: ${prop('colors.hover.icon', prop('colors.icon'))};
+  }
 `;
 
 export const Container = styled.label`
   display: inline-flex;
   line-height: ${prop('size')};
+  color: inherit;
 `;
 
 export const Label = styled.span`

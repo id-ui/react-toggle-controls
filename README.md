@@ -32,7 +32,7 @@ function CheckboxExample() {
     icon={<span>{'✓'}</span>}
     colors={{ 
         on: { background: '#37D2C5', border: '#37D2C5', icon: '#FFFFFF' }, 
-        off: { background: 'transparent', border: '#CCCCCC', icon: 'transparent' }, 
+        off: { background: 'transparent', border: '#CCCCCC', icon: 'transparent', hover: { border: '#37D2C5' } }, 
         disabled: { background: '#F5F5F5', border: '#D9D9D9', icon: '#D9D9D9' }
     }}
   />

@@ -8,6 +8,9 @@ export const colors = {
     background: 'transparent',
     border: '#CCCCCC',
     icon: 'transparent',
+    hover: {
+      border: '#37D2C5',
+    },
   },
   disabled: {
     background: '#F5F5F5',

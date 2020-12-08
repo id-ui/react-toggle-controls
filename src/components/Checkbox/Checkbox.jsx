@@ -32,6 +32,11 @@ const colorsSetShape = PropTypes.shape({
   background: PropTypes.string,
   border: PropTypes.string,
   icon: PropTypes.string,
+  hover: PropTypes.shape({
+    background: PropTypes.string,
+    border: PropTypes.string,
+    icon: PropTypes.string,
+  }),
 });
 
 Checkbox.propTypes = {

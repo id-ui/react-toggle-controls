@@ -6,7 +6,10 @@ export const Toggle = styled.div`
   height: ${prop('size')};
   border-radius: inherit;
   transition: background-color 0.3s ease-in-out;
-  background-color: ${prop('color')};
+  background-color: ${prop('colors.toggle')};
+  &:hover {
+    background-color: ${prop('colors.hover.toggle', prop('colors.toggle'))};
+  }
 `;
 
 export const Handle = styled.div`
@@ -22,7 +25,10 @@ export const Handle = styled.div`
   height: ${prop('size')};
   min-height: ${prop('size')};
   border-radius: 50%;
-  border-color: ${prop('color')};
+  border-color: ${prop('colors.border')};
+  &:hover {
+    border-color: ${prop('colors.hover.border', prop('colors.border'))};
+  }
 `;
 
 export const Container = styled.label`

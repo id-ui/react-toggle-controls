@@ -4,8 +4,11 @@ export const colors = {
     toggle: '#37D2C5',
   },
   off: {
-    border: '#37D2C5',
+    border: '#CCCCCC',
     toggle: 'transparent',
+    hover: {
+      border: '#37D2C5',
+    },
   },
   disabled: {
     border: '#D9D9D9',

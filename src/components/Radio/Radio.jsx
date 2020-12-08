@@ -22,9 +22,9 @@ function Radio({
         className={className}
         size={handleSize}
         disabled={disabled}
-        color={currentColors.border}
+        colors={currentColors}
       >
-        <Toggle size={toggleSize} color={currentColors.toggle} />
+        <Toggle size={toggleSize} colors={currentColors} />
       </Handle>
       {label && <Label>{label}</Label>}
     </Container>
@@ -34,6 +34,10 @@ function Radio({
 const colorsSetShape = PropTypes.shape({
   border: PropTypes.string,
   toggle: PropTypes.string,
+  hover: PropTypes.shape({
+    border: PropTypes.string,
+    toggle: PropTypes.string,
+  }),
 });
 
 Radio.propTypes = {
