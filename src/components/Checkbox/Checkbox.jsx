@@ -21,7 +21,7 @@ function Checkbox({
     <Container className={className} size={size} colors={currentColors}>
       <ToggleControl checked={checked} disabled={disabled} {...props} />
       <Handle size={size} disabled={disabled}>
-        {checked && icon}
+        {icon}
       </Handle>
       {label && <Label>{label}</Label>}
     </Container>
