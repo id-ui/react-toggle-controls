@@ -1,6 +1,10 @@
 # React Toggle Controls
 
-[![NPM](https://img.shields.io/npm/v/@idui/react-toggle-controls.svg)](https://www.npmjs.com/package/@idui/react-toggle-controls/) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com) [![Coverage Status](https://coveralls.io/repos/github/id-ui/react-toggle-controls/badge.svg?branch=main)](https://coveralls.io/github/id-ui/react-toggle-controls?branch=main)
+[![NPM](https://img.shields.io/npm/v/@idui/react-toggle-controls.svg)](https://www.npmjs.com/package/@idui/react-toggle-controls/)
+[![Size](https://img.shields.io/bundlephobia/min/@idui/react-toggle-controls)](https://www.npmjs.com/package/@idui/react-toggle-controls)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Coverage Status](https://coveralls.io/repos/github/id-ui/react-toggle-controls/badge.svg?branch=main)](https://coveralls.io/github/id-ui/react-toggle-controls?branch=main)
+[![LICENSE](https://img.shields.io/github/license/id-ui/react-toggle-controls)](https://github.com/id-ui/react-toggle-controls/blob/main/LICENSE)
 
 ## Install
 

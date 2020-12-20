@@ -1,7 +1,7 @@
 export const colors = {
   on: {
-    toggle: '#37D2C5',
-    handle: '#37D2C5',
+    toggle: '#580B9E',
+    handle: '#580B9E',
     icon: '#FFFFFF',
   },
   off: {

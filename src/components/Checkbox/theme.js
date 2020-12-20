@@ -1,7 +1,7 @@
 export const colors = {
   on: {
-    background: '#37D2C5',
-    border: '#37D2C5',
+    background: '#580B9E',
+    border: '#580B9E',
     icon: '#FFFFFF',
   },
   off: {
@@ -9,7 +9,7 @@ export const colors = {
     border: '#CCCCCC',
     icon: 'transparent',
     hover: {
-      border: '#37D2C5',
+      border: '#580B9E',
     },
   },
   disabled: {
