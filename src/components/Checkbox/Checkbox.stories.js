@@ -1,5 +1,4 @@
 import React, { useCallback, useState } from 'react';
-import { withPropsTable } from 'storybook-addon-react-docgen';
 import Checkbox from './Checkbox';
 import { colors } from './theme';
 
@@ -51,12 +50,6 @@ export default {
     },
     name: { control: 'text' },
     id: { control: 'text' },
-  },
-  decorators: [withPropsTable],
-  parameters: {
-    props: {
-      propTablesInclude: [Checkbox],
-    },
   },
 };
 

@@ -1,5 +1,4 @@
 import React, { useCallback, useState } from 'react';
-import { withPropsTable } from 'storybook-addon-react-docgen';
 import Switch from './Switch';
 import { colors } from './theme';
 
@@ -57,12 +56,6 @@ export default {
     },
     name: { control: 'text' },
     id: { control: 'text' },
-  },
-  decorators: [withPropsTable],
-  parameters: {
-    props: {
-      propTablesInclude: [Switch],
-    },
   },
 };
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import { withPropsTable } from 'storybook-addon-react-docgen';
 import ToggleControl from './ToggleControl';
 
 export default {
@@ -31,12 +30,6 @@ export default {
     },
     name: { control: 'text' },
     id: { control: 'text' },
-  },
-  decorators: [withPropsTable],
-  parameters: {
-    props: {
-      propTablesInclude: [ToggleControl],
-    },
   },
 };
 

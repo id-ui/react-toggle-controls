@@ -1,5 +1,4 @@
 import React, { useCallback, useState } from 'react';
-import { withPropsTable } from 'storybook-addon-react-docgen';
 import Radio from './Radio';
 import { colors } from './theme';
 
@@ -52,12 +51,6 @@ export default {
     },
     name: { control: 'text' },
     id: { control: 'text' },
-  },
-  decorators: [withPropsTable],
-  parameters: {
-    props: {
-      propTablesInclude: [Radio],
-    },
   },
 };
 
