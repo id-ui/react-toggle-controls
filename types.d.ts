@@ -39,7 +39,7 @@ export interface ToggleProps {
     required?: boolean;
 }
 
-export class ToggleControl extends React.Component<ToggleProps> {}
+export default class ToggleControl extends React.Component<ToggleProps> {}
 
 interface CheckboxColorsSet {
     background?: string;
