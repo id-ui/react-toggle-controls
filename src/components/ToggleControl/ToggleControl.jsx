@@ -1,14 +1,11 @@
-import React, { useCallback } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import { Input } from './styled';
 
 function ToggleControl({ onChange, checked, disabled, ...inputProps }) {
-  const handleChange = useCallback(
-    (e) => {
-      onChange(e.target.checked);
-    },
-    [onChange]
-  );
+  const handleChange = (e) => {
+    onChange(e.target.checked);
+  };
 
   return (
     <Input
