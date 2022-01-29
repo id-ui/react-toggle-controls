@@ -1,6 +1,7 @@
 import React, { useCallback, useState } from 'react';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
 import Switch from './Switch';
-import { colors } from './theme';
+import { defaultColors } from './theme';
 
 export default {
   title: 'Switch',
@@ -28,8 +29,8 @@ export default {
     colors: {
       control: 'object',
       description: 'switch colors theme for on/off/disabled states',
-      defaultValue: colors,
-      table: { defaultValue: { summary: JSON.stringify(colors) } },
+      defaultValue: defaultColors,
+      table: { defaultValue: { summary: JSON.stringify(defaultColors) } },
     },
     icons: {
       control: 'object',
@@ -57,9 +58,13 @@ export default {
     name: { control: 'text' },
     id: { control: 'text' },
   },
-};
+} as ComponentMeta<typeof Switch>;
 
-export function Playground({ checked, onChange, ...props }) {
+export const Playground: ComponentStory<typeof Switch> = ({
+  checked,
+  onChange,
+  ...props
+}) => {
   const [isOn, setOn] = useState(checked);
 
   useCallback(() => {
@@ -75,4 +80,4 @@ export function Playground({ checked, onChange, ...props }) {
   );
 
   return <Switch {...props} checked={isOn} onChange={handleChange} />;
-}
+};

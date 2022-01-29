@@ -1,5 +1,7 @@
 import React from 'react';
+import { ComponentMeta, Story } from '@storybook/react';
 import ToggleControl from './ToggleControl';
+import { ToggleProps } from './types';
 
 export default {
   title: 'ToggleControl',
@@ -31,9 +33,16 @@ export default {
     name: { control: 'text' },
     id: { control: 'text' },
   },
-};
+} as ComponentMeta<typeof ToggleControl>;
 
-export function CustomToggle({
+interface CustomToggleProps extends ToggleProps {
+  label: string;
+  onText: string;
+  offText: string;
+  className: string;
+}
+
+export const CustomToggle: Story<CustomToggleProps> = ({
   label,
   checked,
   disabled,
@@ -41,7 +50,7 @@ export function CustomToggle({
   offText,
   className,
   ...props
-}) {
+}) => {
   return (
     <label className={className} style={{ color: disabled ? 'gray' : 'black' }}>
       <ToggleControl checked={checked} disabled={disabled} {...props} />
@@ -49,4 +58,4 @@ export function CustomToggle({
       {label && <span>{label}</span>}
     </label>
   );
-}
+};

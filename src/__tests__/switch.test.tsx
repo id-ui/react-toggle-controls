@@ -2,18 +2,24 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import user from '@testing-library/user-event';
 import { axe } from 'jest-axe';
-import Radio from 'components/Radio';
+import { Switch } from '../components/Switch';
 
-describe('Radio', () => {
+describe('Switch', () => {
   it('accessible', async () => {
-    const { container } = render(<Radio />);
+    const { container } = render(<Switch />);
     const results = await axe(container);
     expect(results).toHaveNoViolations();
   });
 
   it('calls onChange with true on click event if off', () => {
     const onChange = jest.fn();
-    const { getByText } = render(<Radio label="label" onChange={onChange} />);
+    const { getByText } = render(
+      <Switch
+        label="label"
+        onChange={onChange}
+        icons={{ on: ':)', off: ':(' }}
+      />
+    );
     const label = getByText('label').parentElement;
     user.click(label);
     expect(onChange).toHaveBeenCalled();
@@ -21,20 +27,27 @@ describe('Radio', () => {
     expect(onChange).toHaveBeenCalledWith(true);
   });
 
-  it('does not call onChange on click event if on', () => {
+  it('calls onChange with false on click event if on', () => {
     const onChange = jest.fn();
     const { getByText } = render(
-      <Radio label="label" checked onChange={onChange} />
+      <Switch
+        label="label"
+        checked
+        onChange={onChange}
+        icons={{ on: ':)', off: ':(' }}
+      />
     );
     const label = getByText('label').parentElement;
     user.click(label);
-    expect(onChange).not.toHaveBeenCalled();
+    expect(onChange).toHaveBeenCalled();
+    expect(onChange).toHaveBeenCalledTimes(1);
+    expect(onChange).toHaveBeenCalledWith(false);
   });
 
   it('does not call onChange on click event if disabled', () => {
     const onChange = jest.fn();
     const { getByText } = render(
-      <Radio label="label" disabled onChange={onChange} />
+      <Switch label="label" disabled checked onChange={onChange} />
     );
     const label = getByText('label').parentElement;
     user.click(label);

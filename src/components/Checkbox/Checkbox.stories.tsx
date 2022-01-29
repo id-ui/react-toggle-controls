@@ -1,10 +1,11 @@
 import React, { useCallback, useState } from 'react';
-import Radio from './Radio';
-import { colors } from './theme';
+import { ComponentMeta, ComponentStory } from '@storybook/react';
+import Checkbox from './Checkbox';
+import { defaultColors } from './theme';
 
 export default {
-  title: 'Radio',
-  component: Radio,
+  title: 'Checkbox',
+  component: Checkbox,
   argTypes: {
     checked: {
       control: 'boolean',
@@ -12,24 +13,23 @@ export default {
       table: { defaultValue: { summary: false } },
     },
     onChange: { action: 'onChange', description: 'onChange(checked)' },
-    value: { control: 'text', description: 'radio value' },
-    toggleSize: {
+    value: { control: 'text', description: 'checkbox value' },
+    size: {
       control: 'text',
-      description: 'radio toggle size',
-      defaultValue: '12px',
-      table: { defaultValue: { summary: '12px' } },
-    },
-    handleSize: {
-      control: 'text',
-      description: 'radio handle size',
+      description: 'checkbox size',
       defaultValue: '20px',
       table: { defaultValue: { summary: '20px' } },
     },
+    icon: {
+      description: 'checkbox icon',
+      disable: true,
+      table: { defaultValue: { summary: '<CheckIcon />' } },
+    },
     colors: {
       control: 'object',
-      description: 'radio colors theme for on/off/disabled states',
-      defaultValue: colors,
-      table: { defaultValue: { summary: JSON.stringify(colors) } },
+      description: 'checkbox colors theme for on/off/disabled states',
+      defaultValue: defaultColors,
+      table: { defaultValue: { summary: JSON.stringify(defaultColors) } },
     },
     label: { control: 'text' },
     className: { control: 'text' },
@@ -46,15 +46,19 @@ export default {
     type: {
       control: 'text',
       description: 'control type',
-      defaultValue: 'radio',
-      table: { defaultValue: { summary: 'radio' } },
+      defaultValue: 'checkbox',
+      table: { defaultValue: { summary: 'checkbox' } },
     },
     name: { control: 'text' },
     id: { control: 'text' },
   },
-};
+} as ComponentMeta<typeof Checkbox>;
 
-export function Playground({ checked, onChange, ...props }) {
+export const Playground: ComponentStory<typeof Checkbox> = ({
+  checked,
+  onChange,
+  ...props
+}) => {
   const [isOn, setOn] = useState(checked);
 
   useCallback(() => {
@@ -69,5 +73,5 @@ export function Playground({ checked, onChange, ...props }) {
     [onChange]
   );
 
-  return <Radio {...props} checked={isOn} onChange={handleChange} />;
-}
+  return <Checkbox {...props} checked={isOn} onChange={handleChange} />;
+};

@@ -1,7 +1,14 @@
 import styled, { css } from 'styled-components';
 import { ifProp, prop } from 'styled-tools';
 
-export const Toggle = styled.div`
+interface SwitchToggleProps {
+  isOn: boolean;
+  size: string;
+  color: string;
+  iconColor: string;
+}
+
+export const Toggle = styled.div<SwitchToggleProps>`
   position: absolute;
   top: 50%;
   transition: all 0.3s ease-in-out;
@@ -41,7 +48,13 @@ export const Toggle = styled.div`
   }
 `;
 
-export const Handle = styled.div`
+interface SwitchHandleProps {
+  disabled: boolean;
+  size: [string, string];
+  color: string;
+}
+
+export const Handle = styled.div<SwitchHandleProps>`
   position: relative;
   display: inline-block;
   cursor: ${ifProp('disabled', 'default', 'pointer')};
@@ -61,7 +74,11 @@ export const Handle = styled.div`
   }
 `;
 
-export const Container = styled.label`
+interface SwitchContainerProps {
+  size: string;
+}
+
+export const Container = styled.label<SwitchContainerProps>`
   display: inline-flex;
   line-height: ${prop('size')};
 `;

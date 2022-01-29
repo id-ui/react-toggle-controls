@@ -1,7 +1,13 @@
 import styled from 'styled-components';
 import { ifProp, prop } from 'styled-tools';
+import { CheckboxColorsSet } from './types';
 
-export const Handle = styled.div`
+interface CheckboxHandleProps {
+  disabled: boolean;
+  size: string;
+}
+
+export const Handle = styled.div<CheckboxHandleProps>`
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -17,7 +23,12 @@ export const Handle = styled.div`
   user-select: none;
 `;
 
-export const Container = styled.label`
+interface CheckboxContainerProps {
+  size: string;
+  colors: CheckboxColorsSet;
+}
+
+export const Container = styled.label<CheckboxContainerProps>`
   display: inline-flex;
   line-height: ${prop('size')};
   color: inherit;

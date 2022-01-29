@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import user from '@testing-library/user-event';
 import { axe } from 'jest-axe';
-import Checkbox from 'components/Checkbox';
+import { Checkbox } from '../components/Checkbox';
 
 describe('Checkbox', () => {
   it('accessible', async () => {

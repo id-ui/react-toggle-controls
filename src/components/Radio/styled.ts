@@ -1,14 +1,24 @@
 import styled from 'styled-components';
 import { ifProp, prop } from 'styled-tools';
+import { RadioColorsSet } from './types';
 
-export const Toggle = styled.div`
+interface RadioToggleProps {
+  size: string;
+}
+
+export const Toggle = styled.div<RadioToggleProps>`
   width: ${prop('size')};
   height: ${prop('size')};
   border-radius: inherit;
   transition: background-color 0.3s ease-in-out;
 `;
 
-export const Handle = styled.div`
+interface RadioHandleProps {
+  disabled: boolean;
+  size: string;
+}
+
+export const Handle = styled.div<RadioHandleProps>`
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +33,12 @@ export const Handle = styled.div`
   border-radius: 50%;
 `;
 
-export const Container = styled.label`
+interface RadioContainerProps {
+  size: string;
+  colors: RadioColorsSet;
+}
+
+export const Container = styled.label<RadioContainerProps>`
   display: inline-flex;
   line-height: ${prop('size')};
   ${Handle} {
