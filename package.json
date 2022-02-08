@@ -1,6 +1,6 @@
 {
   "name": "@idui/react-toggle-controls",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "React Toggle Controls",
   "author": "kaprisa57@gmail.com",
   "license": "MIT",
@@ -75,7 +75,6 @@
     "@testing-library/react-hooks": "3.0.0",
     "@testing-library/user-event": "^12.2.2",
     "@types/jest-axe": "^3.5.3",
-    "@types/lodash": "^4.14.178",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
     "@types/styled-components": "^5.1.19",

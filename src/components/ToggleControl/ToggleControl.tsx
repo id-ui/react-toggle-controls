@@ -1,5 +1,5 @@
 import React, { SyntheticEvent } from 'react';
-import { noop } from 'lodash';
+import { noop } from './helpers';
 import { Input } from './styled';
 import { ToggleProps } from './types';
 
